@@ -15,7 +15,7 @@ Following is a basic overview of the analysis performed for credit risk classifi
 
 This section describes the accuracy and balanced accuracy scores, and the precision and recall scores of the Logistic regression model used for the acitivity:
 
-* Logistic regression:
+* Model 1 : Logistic regression with original data:
     * This model does a good job in predicting both the healthy and the high-risk loans as inferred from accuracy score of 99%.
     * This model has a precision score of 100% for the healthy loans and 85% for the high-risk loans. Meaning that healthy loans were classified correctly 100 % of the times while mere 85% in case of high-risk loans.
     * This model has a recall score of 99% for the healthy loans and 91% for the high-risk loans. The scores imply that for all the instances where the loans were actually healthy, 99% of the times they were classified correctly. However, for all the instances where the loans were actually high-risk, they were classified correctly 91% of the times.
@@ -24,6 +24,10 @@ This section describes the accuracy and balanced accuracy scores, and the precis
 
      ![Model1_report](https://github.com/s0uravk/credit-risk-classification/assets/144293972/a9a99a65-499f-4579-b802-3a622162418b)
 
+* Model 2 : Logistic regression with resampled data:
+    * This model does a good job in predicting both the healthy and the high-risk loans as inferred from accuracy score of 99%.
+    * This model has a precision score of 100% for the healthy loans and 84% for the high-risk loans. Meaning that healthy loans were classified correctly 100 % of the times while mere 84% in case of high-risk loans.
+    * This model has a recall score of 99% for the healthy loans and 99% for the high-risk loans. The scores imply that for all the instances where the loans were actually healthy, 99% of the times they were classified correctly. However, for all the instances where the loans were actually high-risk, they were classified correctly 99% of the times.
 
      ![Model2_matrix](https://github.com/s0uravk/credit-risk-classification/assets/144293972/a0ac897a-a3de-4657-9e97-0eb2f21472ec)
 
@@ -31,10 +35,7 @@ This section describes the accuracy and balanced accuracy scores, and the precis
 
 
 ## Summary
+Here's the summary of the analysis and recommendation of the better model to use.
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+* Both of the models have high accuracy score. Whereas, for second model precision score slightly less as compared to first model. Second model performs the best as it has higher recall score for predicting high-risk loan as compared to model 1.
+* Yes, the performance depends on the problem we are trying to solve as model 2 decrease the numbers of False positive meaning that the loans that were predicted as healthy but in actuality, were high-risk. And we would like to avoid those circumstances as much as possible. Predicting high-risk loan(1) is more important.
