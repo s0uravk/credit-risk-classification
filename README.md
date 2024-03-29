@@ -13,7 +13,7 @@ Following is a basic overview of the analysis performed for credit risk classifi
 
 ## Results
 
-This section describes the accuracy and balanced accuracy scores, as well as the precision and recall scores of the Logistic regression model used for the activity:
+This section describes the accuracy scores, as well as the precision and recall scores of the Logistic regression model used for the activity:
 
 * Model 1: Logistic regression with original data:
     * This model does a good job of predicting both the healthy and the high-risk loans as inferred from the accuracy score of 99%.
