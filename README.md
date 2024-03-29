@@ -13,10 +13,12 @@ Following is a basic overview of the analysis performed for credit risk classifi
 
 ## Results
 
-Using bulleted lists, describe the accuracy scores and the precision and recall scores of all machine learning models.
+This section describes the accuracy and balanced accuracy scores, and the precision and recall scores of the Logistic regression model used for the acitivity:
 
-* Machine Learning Model 1:
-    * Description of Model 1 Accuracy, Precision, and Recall scores.
+* Logistic regression:
+    * This model does a good job in predicting both the healthy and the high-risk loans as inferred from accuracy score of 99%.
+    * This model has a precision score of 100% for the healthy loans and 85% for the high-risk loans. Meaning that healthy loans were classified correctly 100 % of the times while mere 85% in case of high-risk loans.
+    * This model has a recall score of 99% for the healthy loans and 91% for the high-risk loans. The scores imply that for all the instances where the loans were actually healthy, 99% of the times they were classified correctly. However, for all the instances where the loans were actually high-risk, they were classified correctly 91% of the times.
 
 ## Summary
 
