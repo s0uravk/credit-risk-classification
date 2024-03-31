@@ -45,4 +45,4 @@ Oversampling seems to be more appropriate to use to balance the data as I don't 
 Here's the summary of the analysis and recommendation of the best model to use.
 
 * Both of the models have a high accuracy score. Whereas, for the second model precision score is slightly less compared to the first model. The second model performs the best as it has a higher recall score for predicting high-risk loans compared to model 1.
-* Yes, the performance depends on the problem we are trying to solve as model 2 decreases the number of False negatives meaning that the loans that were predicted as healthy but in actuality, were high-risk. And we would like to avoid those circumstances as much as possible. Predicting high-risk loans (1) correctly is more important.
+* Yes, the performance depends on the problem we are trying to solve as model 2 decreases the number of False positives meaning that the loans that were predicted as healthy but in actuality, were high-risk. And we would like to avoid those circumstances as much as possible. Predicting high-risk loans (1) correctly is more important.
